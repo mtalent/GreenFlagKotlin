@@ -69,7 +69,7 @@ class ActivityCreateAccount : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
 
                 var ps = Pattern.compile("^\\w+[\\w-\\.]*\\@\\w+((-\\w+)|(\\w*))\\.[a-z]{2,3}$")
-                var ms = ps.matcher(etEmail.text.toString())
+                var ms = ps.matcher(etCreatePassword.text.toString())
                 var bs = ms.matches()
 
                 if(bs) {
@@ -102,7 +102,7 @@ class ActivityCreateAccount : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
 
                 var ps = Pattern.compile("^\\w+[\\w-\\.]*\\@\\w+((-\\w+)|(\\w*))\\.[a-z]{2,3}$")
-                var ms = ps.matcher(etEmail.text.toString())
+                var ms = ps.matcher(etRepeatPassword.text.toString())
                 var bs = ms.matches()
 
                 if(bs) {
