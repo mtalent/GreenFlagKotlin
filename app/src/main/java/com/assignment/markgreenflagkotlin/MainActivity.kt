@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        var btnMainCreate: TextView = findViewById<TextView>(R.id.tv_button)
+        val btnMainCreate: TextView = findViewById<TextView>(R.id.tv_button)
 
         btnMainCreate.setOnClickListener {
 
